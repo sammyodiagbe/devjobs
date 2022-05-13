@@ -13,7 +13,10 @@ const Home = () => {
           <div className="toggle-wrapper">
             <img src={LightModeIcon} alt="dark mode toggle icon" />
             <div className="toggle-container">
-              <input type="checkbox" />
+              <label htmlFor="toggle">
+                <input type="checkbox" />
+                <div className="toggle-container"></div>
+              </label>
             </div>
             <img src={DarkModeIcon} alt="dark mode toggle icon" />
           </div>
