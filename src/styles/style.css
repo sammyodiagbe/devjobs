@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+button, input {
+  background: transparent;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+div.navigation-wrapper {
+  background: #5762e0;
+  color: #ffffff;
+  padding: 1em;
+  height: 136px;
+  position: relative;
+}
+
+div.navigation-wrapper nav.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.navigation-wrapper nav.navigation div.toggle-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.navigation-wrapper div.search-container {
+  height: 80px;
+  background: #ffffff;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+div.navigation-wrapper div.search-container div.mobile-search button {
+  height: 48px;
+  width: 48px;
+}
+
+div.navigation-wrapper div.search-container div.mobile-search button.mobile-submit {
+  background: #5762e0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+div.navigation-wrapper div.search-container div.mobile-search input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=style.css.map */

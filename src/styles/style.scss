@@ -1,0 +1,102 @@
+// primary colors
+$violet: hsl(235, 69%, 61%);
+$light_violet: hsl(235, 82, 77);
+$very_dark_blue: hsl(219, 29, 14);
+$midnight: hsl(220, 29, 10);
+
+// secondary colors
+$white : #ffffff;
+$light_grey: #f4f6f8;
+$grey: #9daec2;
+$dark_grey: #6e8098;
+
+$padding: 1em;
+$border-radius: 5px;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+button,input {
+    background: transparent;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 34px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+div.navigation-wrapper {
+    background: $violet;
+    color: $white;
+    padding: $padding;
+    height: 136px;
+    position: relative;
+    nav.navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div.toggle-wrapper {
+            display: flex;
+            width: 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    div.search-container {
+        height: 80px;
+        background: $white;
+        width: 100%;
+        position: relative;
+        top: 50px;
+        padding: 0 $padding;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: $border-radius;
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+        div.mobile-search {
+            button {
+                height: 48px;
+                width: 48px;
+
+                &.mobile-submit {
+                    background: $violet;
+                    border-radius: $border-radius;
+                    font-weight: bold;
+                }
+            }
+            input {
+                flex: 1;
+            }
+        }
+    }
+}
