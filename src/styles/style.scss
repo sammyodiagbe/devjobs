@@ -90,12 +90,13 @@ div.navigation-wrapper {
                     &:checked ~ span.toggle-container{
                          
                             transform: translateX(60px - 25px);
+                            transition: 300ms;
                         
                     }
                 }
 
                 span.toggle-container {
-                    
+                        display: inline-block;
                         position: absolute;
                         height: 18px;
                         width: 18px;

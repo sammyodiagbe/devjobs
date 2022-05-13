@@ -96,9 +96,12 @@ div.navigation-wrapper nav.navigation div.toggle-container label input[type=chec
 div.navigation-wrapper nav.navigation div.toggle-container label input[type=checkbox]:checked ~ span.toggle-container {
   -webkit-transform: translateX(35px);
           transform: translateX(35px);
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 div.navigation-wrapper nav.navigation div.toggle-container label span.toggle-container {
+  display: inline-block;
   position: absolute;
   height: 18px;
   width: 18px;
