@@ -104,6 +104,8 @@ div.navigation-wrapper {
                         width: 18px;
                         background: $violet;
                         border-radius: 25px;
+                        transform: translateX(0px);
+                        -webkit-transform: translateX(0px);
                         transition: transform 300ms;
                         -webkit-transition: transform 300ms;
                         -webkit-transition: -webkit-transform 300ms;

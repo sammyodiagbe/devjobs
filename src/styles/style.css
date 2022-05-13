@@ -110,6 +110,8 @@ div.navigation-wrapper nav.navigation div.toggle-container label span.toggle-con
   width: 18px;
   background: #5762e0;
   border-radius: 25px;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
