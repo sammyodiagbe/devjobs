@@ -41,7 +41,7 @@ h4 {
 div.navigation-wrapper {
   background: #5762e0;
   color: #ffffff;
-  padding: 1em;
+  padding: 1.5em;
   height: 136px;
   position: relative;
 }
@@ -117,7 +117,7 @@ div.search-container {
   width: 100%;
   position: relative;
   top: 50px;
-  padding: 0 1em;
+  padding: 0 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
