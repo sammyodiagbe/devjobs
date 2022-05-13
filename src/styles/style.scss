@@ -79,15 +79,19 @@ div.navigation-wrapper {
         top: 50px;
         padding: 0 $padding;
         display: flex;
+        
         align-items: center;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
         border-radius: $border-radius;
         box-shadow: 0 0 3px rgba(0,0,0,.2);
         div.mobile-search {
+            display: grid;
+            align-items: center;
+            width: 100%;
+            grid-template-columns: 1fr 48px 48px;
             button {
                 height: 48px;
                 width: 48px;
-
                 &.mobile-submit {
                     background: $violet;
                     border-radius: $border-radius;
@@ -95,7 +99,7 @@ div.navigation-wrapper {
                 }
             }
             input {
-                flex: 1;
+                
             }
         }
     }
