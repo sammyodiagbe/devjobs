@@ -71,19 +71,12 @@ div.navigation-wrapper nav.navigation div.toggle-wrapper {
           align-items: center;
 }
 
-div.navigation-wrapper nav.navigation div.toggle-container label input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: none;
-}
-
-div.navigation-wrapper nav.navigation div.toggle-container label div.toggle-container {
+div.navigation-wrapper nav.navigation div.toggle-container label {
   width: 60px;
-  height: 25px;
+  height: 30px;
   background: #ffffff;
   padding: 3px;
-  border-radius: 10px;
+  border-radius: 15px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,16 +86,29 @@ div.navigation-wrapper nav.navigation div.toggle-container label div.toggle-cont
           align-items: center;
 }
 
-div.navigation-wrapper nav.navigation div.toggle-container label div.toggle-container::after {
-  content: "";
+div.navigation-wrapper nav.navigation div.toggle-container label input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+div.navigation-wrapper nav.navigation div.toggle-container label input[type=checkbox]:checked ~ span.toggle-container {
+  -webkit-transform: translateX(35px);
+          transform: translateX(35px);
+}
+
+div.navigation-wrapper nav.navigation div.toggle-container label span.toggle-container {
   position: absolute;
   height: 18px;
   width: 18px;
   background: #5762e0;
-  border-radius: 20px;
+  border-radius: 25px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
-div.navigation-wrapper div.search-container {
+div.search-container {
   height: 80px;
   background: #ffffff;
   width: 100%;
@@ -120,7 +126,7 @@ div.navigation-wrapper div.search-container {
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-div.navigation-wrapper div.search-container div.mobile-search {
+div.search-container div.mobile-search {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -131,12 +137,12 @@ div.navigation-wrapper div.search-container div.mobile-search {
       grid-template-columns: 1fr 48px 48px;
 }
 
-div.navigation-wrapper div.search-container div.mobile-search button {
+div.search-container div.mobile-search button {
   height: 48px;
   width: 48px;
 }
 
-div.navigation-wrapper div.search-container div.mobile-search button.mobile-submit {
+div.search-container div.mobile-search button.mobile-submit {
   background: #5762e0;
   border-radius: 5px;
   font-weight: bold;

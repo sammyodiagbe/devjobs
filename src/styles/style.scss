@@ -74,29 +74,35 @@ div.navigation-wrapper {
 
         div.toggle-container {
             label {
-                input[type=checkbox] {
-                    appearance: none;
-                    display: none;
-                }
-
-                div.toggle-container {
-                    width: 60px;
-                    height: 25px;
+                width: 60px;
+                    height: 30px;
                     background: $white;
                     padding: 3px;
-                    border-radius: 10px;
+                    border-radius: 15px;
                     position: relative;
                     display: flex;
-                        align-items: center;
-                    &::after {
-                        content: "";
+                    align-items: center;
+                input[type=checkbox] {
+                    position: absolute;
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                    &:checked ~ span.toggle-container{
+                         
+                            transform: translateX(60px - 25px);
+                        
+                    }
+                }
+
+                span.toggle-container {
+                    
                         position: absolute;
                         height: 18px;
                         width: 18px;
                         background: $violet;
-                        border-radius: 20px;
-                        
-                    }
+                        border-radius: 25px;
+                        transition: 300ms;
+                }
                 }
             }
         }
@@ -134,4 +140,3 @@ div.navigation-wrapper {
             }
         }
     }
-}

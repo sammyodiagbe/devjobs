@@ -14,8 +14,8 @@ const Home = () => {
             <img src={LightModeIcon} alt="dark mode toggle icon" />
             <div className="toggle-container">
               <label htmlFor="toggle">
-                <input type="checkbox" />
-                <div className="toggle-container"></div>
+                <input type="checkbox" id="toggle" name="toggle" />
+                <span className="toggle-container"></span>
               </label>
             </div>
             <img src={DarkModeIcon} alt="dark mode toggle icon" />
