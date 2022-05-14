@@ -98,10 +98,15 @@ div.navigation-wrapper {
     padding: $padding;
     height: 136px;
     position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
     nav.navigation {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
         div.toggle-wrapper {
             display: flex;
             width: 120px;

@@ -77,6 +77,11 @@ div.navigation-wrapper {
   padding: 1.5em;
   height: 136px;
   position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 div.navigation-wrapper nav.navigation {
