@@ -14,8 +14,16 @@ body {
 }
 
 body .dark-app {
-  background: #19212e;
+  background: #121721;
   color: #ffffff;
+}
+
+body .dark-app div.search-container {
+  background: #19212e;
+}
+
+body .dark-app div.search-container input[type=text] {
+  color: #fff;
 }
 
 body .light-app {

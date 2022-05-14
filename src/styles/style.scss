@@ -28,8 +28,18 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 
     .dark-app {
-        background: $very_dark_blue;
+        background: $midnight;
         color: $white;
+
+        div.search-container {
+            background: $very_dark_blue;
+            input[type=text] {
+                color: #fff;
+                &::placeholder {
+                    // color: $white;
+                }
+            }
+        }
     }
 
     .light-app {
