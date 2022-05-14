@@ -26,6 +26,21 @@ $border-radius: 5px;
 body {
     font-size: 16px;
     font-family: 'Kumbh Sans', sans-serif;
+
+    .dark-app {
+        background: $very_dark_blue;
+        color: $white;
+    }
+
+    .light-app {
+        background: $white;
+        color: $very_dark_blue;
+    }
+
+    .app {
+        min-height: 100vh;
+        transition: 300ms;
+    }
 }
 
 button,input {

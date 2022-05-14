@@ -13,6 +13,22 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+body .dark-app {
+  background: #19212e;
+  color: #ffffff;
+}
+
+body .light-app {
+  background: #ffffff;
+  color: #19212e;
+}
+
+body .app {
+  min-height: 100vh;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 button, input {
   background: transparent;
   font-size: 1em;

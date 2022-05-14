@@ -3,8 +3,11 @@ import DarkModeIcon from "../assets/moon_icon.svg";
 import filterLightIcon from "../assets/filter_light.svg";
 import filterDarkIcon from "../assets/filter_dark.svg";
 import searchIcon from "../assets/search_icon.svg";
+import { useContext } from "react";
+import { themeContext } from "../context/themeContext";
 
 const Navigation = () => {
+  const { setTheme } = useContext(themeContext);
   return (
     <div className="navigation-wrapper">
       <nav className="navigation">
@@ -13,7 +16,18 @@ const Navigation = () => {
           <img src={LightModeIcon} alt="dark mode toggle icon" />
           <div className="toggle-container">
             <label htmlFor="toggle">
-              <input type="checkbox" id="toggle" name="toggle" />
+              <input
+                type="checkbox"
+                id="toggle"
+                name="toggle"
+                onChange={(e) => {
+                  if (e.target.checked) {
+                    setTheme("dark");
+                  } else {
+                    setTheme("light");
+                  }
+                }}
+              />
               <span className="toggle-container"></span>
             </label>
           </div>

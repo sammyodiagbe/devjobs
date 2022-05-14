@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <themeContext.Provider value={{ theme, setTheme }}>
-        <div className="App">
+        <div className={theme === "light" ? "app light-app" : "app dark-app"}>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
