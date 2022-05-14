@@ -11,7 +11,9 @@ $grey: #9daec2;
 $dark_grey: #6e8098;
 
 $padding: 1.5em;
-$border-radius: 5px;
+$border-radius: 8px;
+$box-shadow: 0 0 3px rgba(0,0,0,.2);
+$logo-radius: 17px;
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
@@ -21,6 +23,10 @@ $border-radius: 5px;
     border: none;
     outline: none;
     box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-weight: 400;
 }
 
 body {
@@ -37,6 +43,14 @@ body {
                 color: #fff;
                 &::placeholder {
                     // color: $white;
+                }
+            }
+        }
+
+        main.main {
+            div.jobs-container {
+                div.job-wrapper {
+                    background: $very_dark_blue;
                 }
             }
         }
@@ -152,7 +166,7 @@ div.navigation-wrapper {
         align-items: center;
         // justify-content: space-evenly;
         border-radius: $border-radius;
-        box-shadow: 0 0 3px rgba(0,0,0,.2);
+        box-shadow: $box-shadow;
         div.mobile-search {
             display: grid;
             align-items: center;
@@ -165,6 +179,52 @@ div.navigation-wrapper {
                     background: $violet;
                     border-radius: $border-radius;
                     font-weight: bold;
+                }
+            }
+        }
+    }
+
+    main.main {
+        padding: 8em 1.5em;
+        div.jobs-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 3.5em;
+            div.job-wrapper {
+                background: $white;
+                box-shadow: $box-shadow;
+                padding: $padding;
+                border-radius: $border-radius;
+                div.logo-wrapper {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: $logo-radius;
+                    padding: $padding;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    top:  -49px;
+                }
+
+                div.details-wrapper {
+                    margin-bottom: 2em;
+                    h3 {
+                        font-weight: 400;
+                        color: $dark_grey;
+                    }
+
+                    h2.job-title {
+                        margin: .4em 0;
+                    }
+                }
+
+                div.location-wrapper {
+                    h3 {
+                        a {
+                            color: $violet;
+                        }
+                    }
                 }
             }
         }
