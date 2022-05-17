@@ -3,13 +3,16 @@ import DarkModeIcon from "../assets/moon_icon.svg";
 import filterLightIcon from "../assets/filter_light.svg";
 import filterDarkIcon from "../assets/filter_dark.svg";
 import searchIcon from "../assets/search_icon.svg";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { themeContext } from "../context/themeContext";
 
 const Navigation = () => {
   const { setTheme } = useContext(themeContext);
+  const [openFilterContainer, setOpenFilterContainer] = useState(false);
   return (
     <div className="navigation-wrapper">
+      <div className="filter-wrapper"></div>
+
       <nav className="navigation">
         <h1 className="brand">devJobs</h1>
         <div className="toggle-wrapper">
@@ -37,7 +40,10 @@ const Navigation = () => {
       <div className="search-container">
         <div className="mobile-search">
           <input type="text" placeholder="Filter by title" />
-          <button className="form-icon">
+          <button
+            className="form-icon"
+            onClick={() => setOpenFilterContainer(!openFilterContainer)}
+          >
             <img src={filterLightIcon} alt="filter" />
           </button>
           <button className="mobile-submit">
