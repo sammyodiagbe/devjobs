@@ -71,12 +71,67 @@ h4 {
   line-height: 18px;
 }
 
+div.popover-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+}
+
+div.popover-wrapper div.filter-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 80%;
+}
+
+div.popover-wrapper div.filter-wrapper div.filter-head {
+  padding: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr;
+      grid-template-columns: 20px 1fr;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+div.popover-wrapper div.filter-wrapper div.filter-body {
+  padding: 1.5em;
+}
+
+div.popover-wrapper div.filter-wrapper div.filter-body div.filter-body-head {
+  margin-bottom: 3em;
+}
+
+div.popover-wrapper div.filter-wrapper div.filter-body button.btn {
+  padding: 1.5em;
+  display: block;
+  background: #5762e0;
+  color: #ffffff;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
 div.navigation-wrapper {
   background: #5762e0;
   color: #ffffff;
   padding: 1.5em;
   height: 136px;
-  position: relative;
   position: -webkit-sticky;
   position: sticky;
   top: 0;

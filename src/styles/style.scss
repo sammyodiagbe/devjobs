@@ -92,31 +92,61 @@ h4 {
     line-height: 18px;
 }
 
+div.popover-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    div.filter-wrapper {
+        background: $white;
+        border-radius: $border-radius;
+        width: 80%;
+        div.filter-head {
+            padding: $padding;
+            display: grid;
+            grid-template-columns:20px 1fr;
+            grid-gap: 10px;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,.18);
+        }
+
+        div.filter-body {
+            padding: $padding;
+            div.filter-body-head {
+                margin-bottom: 3em;
+            }
+
+            button.btn {
+                padding: $padding;
+                display: block;
+                background: $violet;
+                color: $white;
+                width: 100%;
+
+                font-weight: bold;
+                border-radius: $border-radius;
+            }
+        }
+    }
+}
+
 div.navigation-wrapper {
     background: $violet;
     color: $white;
     padding: $padding;
     height: 136px;
-    position: relative;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
 
-    div.popover-wrapper {
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        background: rgba(0,0,0,1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        div.filter-wrapper {
-            background: $white;
-            width: 80%;
-        }
-    }
+    
     nav.navigation {
         display: flex;
         align-items: center;

@@ -11,16 +11,6 @@ const Navigation = () => {
   const [openFilterContainer, setOpenFilterContainer] = useState(false);
   return (
     <div className="navigation-wrapper">
-      <div className="popover-wrapper">
-        <div className="filter-wrapper">
-          <div className="filter-head"></div>
-          <div className="filter-body">
-            <div className="filter-body-head"></div>
-            <button className="btn search-btn"></button>
-          </div>
-        </div>
-      </div>
-
       <nav className="navigation">
         <h1 className="brand">devJobs</h1>
         <div className="toggle-wrapper">
