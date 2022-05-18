@@ -10,7 +10,6 @@ const Home = () => {
   const [location, setLocation] = useState("");
   const [popover, setOpenPopover] = useState(false);
   const modalRef = useCallback((node) => {
-    // console.log(modalRef);
     if (node !== null) {
       window.addEventListener("click", (event) => {
         if (event.target === node) {
@@ -24,15 +23,6 @@ const Home = () => {
     // load the image
     return <Company key={job.id} data={job} />;
   });
-
-  useEffect(() => {
-    console.log(modalRef);
-    // window.addEventListener("click", (event) => {
-    //   if (event.target == modalRef.current) {
-    //     setOpenPopover(false);
-    //   }
-    // });
-  }, []);
   return (
     <>
       <Navigation setOpenPopover={setOpenPopover} />
