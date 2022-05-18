@@ -3,12 +3,11 @@ import DarkModeIcon from "../assets/moon_icon.svg";
 import filterLightIcon from "../assets/filter_light.svg";
 import iconLocation from "../assets/mobile/icon-location.svg";
 import searchIcon from "../assets/search_icon.svg";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { themeContext } from "../context/themeContext";
 
-const Navigation = () => {
+const Navigation = ({ setOpenPopover }) => {
   const { setTheme } = useContext(themeContext);
-  const [openFilterContainer, setOpenFilterContainer] = useState(false);
   return (
     <div className="navigation-wrapper">
       <nav className="navigation">
@@ -38,10 +37,7 @@ const Navigation = () => {
       <div className="search-container">
         <div className="mobile-search">
           <input type="text" placeholder="Filter by title" />
-          <button
-            className="form-icon"
-            onClick={() => setOpenFilterContainer(!openFilterContainer)}
-          >
+          <button className="form-icon" onClick={() => setOpenPopover(true)}>
             <img src={filterLightIcon} alt="filter" />
           </button>
           <button className="mobile-submit">
