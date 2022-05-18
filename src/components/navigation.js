@@ -1,7 +1,7 @@
 import LightModeIcon from "../assets/moon_light_icon.svg";
 import DarkModeIcon from "../assets/moon_icon.svg";
 import filterLightIcon from "../assets/filter_light.svg";
-import filterDarkIcon from "../assets/filter_dark.svg";
+import iconLocation from "../assets/mobile/icon-location.svg";
 import searchIcon from "../assets/search_icon.svg";
 import { useContext, useState } from "react";
 import { themeContext } from "../context/themeContext";
@@ -11,7 +11,15 @@ const Navigation = () => {
   const [openFilterContainer, setOpenFilterContainer] = useState(false);
   return (
     <div className="navigation-wrapper">
-      <div className="filter-wrapper"></div>
+      <div className="popover-wrapper">
+        <div className="filter-wrapper">
+          <div className="filter-head"></div>
+          <div className="filter-body">
+            <div className="filter-body-head"></div>
+            <button className="btn search-btn"></button>
+          </div>
+        </div>
+      </div>
 
       <nav className="navigation">
         <h1 className="brand">devJobs</h1>
