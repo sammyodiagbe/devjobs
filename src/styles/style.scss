@@ -37,13 +37,18 @@ body {
         background: $midnight;
         color: $white;
 
+        div.pop-overwrapper {
+            background: $very_dark_blue;
+            color: $white;
+        }
+
         div.search-container {
             background: $very_dark_blue;
             input[type=text] {
                 color: #fff;
-                &::placeholder {
-                    // color: $white;
-                }
+                // &::placeholder {
+                //     // color: $white;
+                // }
             }
         }
 

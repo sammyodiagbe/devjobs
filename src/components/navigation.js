@@ -1,7 +1,6 @@
 import LightModeIcon from "../assets/moon_light_icon.svg";
 import DarkModeIcon from "../assets/moon_icon.svg";
 import filterLightIcon from "../assets/filter_light.svg";
-import iconLocation from "../assets/mobile/icon-location.svg";
 import searchIcon from "../assets/search_icon.svg";
 import { useContext } from "react";
 import { themeContext } from "../context/themeContext";

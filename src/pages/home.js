@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useRef, useState } from "react";
+import { useCallback, useContext, useState } from "react";
 import Company from "../components/company";
 import Navigation from "../components/navigation";
 import iconLocation from "../assets/mobile/icon-location.svg";
