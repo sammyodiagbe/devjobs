@@ -37,9 +37,12 @@ body {
         background: $midnight;
         color: $white;
 
-        div.pop-overwrapper {
-            background: $very_dark_blue;
+        div.popover-wrapper {
+            
+            div.filter-wrapper {
+                background: $very_dark_blue;
             color: $white;
+            }
         }
 
         div.search-container {

@@ -23,7 +23,7 @@ body .dark-app {
   color: #ffffff;
 }
 
-body .dark-app div.pop-overwrapper {
+body .dark-app div.popover-wrapper div.filter-wrapper {
   background: #19212e;
   color: #ffffff;
 }
