@@ -120,6 +120,50 @@ div.popover-wrapper {
             padding: $padding;
             div.filter-body-head {
                 margin-bottom: 3em;
+                label.custom-label-wrapper {
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.2em;
+                    input[type=checkbox] {
+                        position: absolute;
+                        height: 0;
+                        width: 0;
+                        opacity: 0;
+
+                        &:checked ~ span.custom-checkmark {
+                            &::after {
+                                opacity: 1;
+                                transition: 300ms;
+                            }
+                        }
+                    }
+
+                    span.custom-checkmark {
+                        display: inline-block;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: $border-radius;
+                        background: $grey;
+                        margin-right: 10px;
+                        position: relative;
+
+
+                        &::after {
+                            position: absolute;
+                            content: url(../assets/desktop/icon-check.svg);
+                            height: 30px;
+                            width: 30px;
+                            background: $violet;
+                            border-radius: $border-radius;
+                            display: flex;
+                            opacity: 0;
+                            align-items: center;
+                            justify-content: center;
+                            transition: 300ms;
+                        }
+                    }
+                }
             }
 
             button.btn {
