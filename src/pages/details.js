@@ -67,17 +67,16 @@ const Details = () => {
             </div>
           </div>
         </div>
-      </main>
-
-      <div className="fixed-bottom">
-        <div className="details hide">
-          <h1>{position}</h1>
-          <p>{company}</p>
+        <div className="fixed-bottom">
+          <div className="details hide">
+            <h1>{position}</h1>
+            <p>{company}</p>
+          </div>
+          <a href="#" className="btn-apply">
+            Apply Now
+          </a>
         </div>
-        <a href="#" className="btn-apply">
-          Apply Now
-        </a>
-      </div>
+      </main>
     </div>
   );
 };

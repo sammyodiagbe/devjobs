@@ -501,6 +501,30 @@ main.main.details-main div.description-wrapper div.description-bottom div.requir
   /* Also needed for space (tweak if needed) */
 }
 
+main.main div.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 20;
+  padding: 1.5em;
+  left: 0;
+  background: #ffffff;
+}
+
+main.main div.fixed-bottom .hide {
+  display: none;
+}
+
+main.main div.fixed-bottom a.btn-apply {
+  display: block;
+  background: #5762e0;
+  text-align: center;
+  padding: 1.5em;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
 main.main div.jobs-container {
   display: -ms-grid;
   display: grid;

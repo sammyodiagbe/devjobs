@@ -446,6 +446,33 @@ div.navigation-wrapper {
                     }
                 }
             }
+
+            
+        }
+
+        div.fixed-bottom {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            z-index: 20;
+            padding: $padding;
+            left: 0;
+            background: $white;
+            .hide {
+                display: none;
+            }
+
+            a.btn-apply {
+                display: block;
+                background: $violet;
+                text-align: center;
+                padding: $padding;
+                color: $white;
+                border-radius: $border-radius;
+
+                font-weight: bold;
+            }
+            
         }
         div.jobs-container {
             display: grid;
