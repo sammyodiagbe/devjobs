@@ -435,6 +435,72 @@ main.main.details-main div.description-wrapper div.description-top a.apply-now {
   text-transform: capitalize;
 }
 
+main.main.details-main div.description-wrapper div.description-bottom {
+  margin-bottom: 1em;
+}
+
+main.main.details-main div.description-wrapper div.description-bottom p.description {
+  margin-bottom: 1.5em;
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements h2, main.main.details-main div.description-wrapper div.description-bottom div.role h2 {
+  margin-bottom: 1em;
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements p, main.main.details-main div.description-wrapper div.description-bottom div.requirements div.items, main.main.details-main div.description-wrapper div.description-bottom div.role p, main.main.details-main div.description-wrapper div.description-bottom div.role div.items {
+  margin-bottom: 1.5em;
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements p ul, main.main.details-main div.description-wrapper div.description-bottom div.requirements div.items ul, main.main.details-main div.description-wrapper div.description-bottom div.role p ul, main.main.details-main div.description-wrapper div.description-bottom div.role div.items ul {
+  list-style: none;
+  /* Remove default bullets */
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements p ul li, main.main.details-main div.description-wrapper div.description-bottom div.requirements div.items ul li, main.main.details-main div.description-wrapper div.description-bottom div.role p ul li, main.main.details-main div.description-wrapper div.description-bottom div.role div.items ul li {
+  margin-bottom: 1em;
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements p ul li::before, main.main.details-main div.description-wrapper div.description-bottom div.requirements div.items ul li::before, main.main.details-main div.description-wrapper div.description-bottom div.role p ul li::before, main.main.details-main div.description-wrapper div.description-bottom div.role div.items ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #5762e0;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements p ol, main.main.details-main div.description-wrapper div.description-bottom div.requirements div.items ol, main.main.details-main div.description-wrapper div.description-bottom div.role p ol, main.main.details-main div.description-wrapper div.description-bottom div.role div.items ol {
+  list-style: none;
+  counter-reset: l-counter 0;
+  /* Remove default bullets */
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements p ol li, main.main.details-main div.description-wrapper div.description-bottom div.requirements div.items ol li, main.main.details-main div.description-wrapper div.description-bottom div.role p ol li, main.main.details-main div.description-wrapper div.description-bottom div.role div.items ol li {
+  margin-bottom: 1em;
+  counter-increment: l-counter 1;
+}
+
+main.main.details-main div.description-wrapper div.description-bottom div.requirements p ol li::before, main.main.details-main div.description-wrapper div.description-bottom div.requirements div.items ol li::before, main.main.details-main div.description-wrapper div.description-bottom div.role p ol li::before, main.main.details-main div.description-wrapper div.description-bottom div.role div.items ol li::before {
+  content: counter(l-counter);
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #5762e0;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
 main.main div.jobs-container {
   display: -ms-grid;
   display: grid;

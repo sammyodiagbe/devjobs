@@ -394,6 +394,57 @@ div.navigation-wrapper {
                         
                     }
                 }
+
+                div.description-bottom {
+                    margin-bottom: 1em;
+
+                    p.description {
+                        margin-bottom: 1.5em;
+                    }
+
+                    div.requirements,div.role {
+                        h2 {
+                            margin-bottom: 1em;
+                        }
+                    p,div.items{
+                            margin-bottom: 1.5em;
+                            ul {
+                                list-style: none;
+                               
+                                li {
+                                    margin-bottom: 1em;
+                                }
+                                li::before {
+                                    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                                    color: $violet; /* Change the color */
+                                    font-weight: bold; /* If you want it to be bold */
+                                    display: inline-block; /* Needed to add space between the bullet and the text */
+                                    width: 1em; /* Also needed for space (tweak if needed) */
+                                    margin-left: -1em; /* Also needed for space (tweak if needed) */
+                                  } /* Remove default bullets */
+                              }
+
+                              ol {
+                                list-style: none;
+                                counter-reset: l-counter 0;
+                                li {
+                                    margin-bottom: 1em;
+                                    counter-increment: l-counter 1;
+                                }
+                                li::before {
+                                    content: counter(l-counter);  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                                    color: $violet; /* Change the color */
+                                    font-weight: bold; /* If you want it to be bold */
+                                    display: inline-block; /* Needed to add space between the bullet and the text */
+                                    width: 1em; /* Also needed for space (tweak if needed) */
+                                    margin-left: -1em; /* Also needed for space (tweak if needed) */
+                                  } /* Remove default bullets */
+                              }
+                              
+                               
+                        }
+                    }
+                }
             }
         }
         div.jobs-container {
