@@ -12,6 +12,7 @@ import maker from "../assets/logos/maker.svg";
 import officelite from "../assets/logos/officelite.svg";
 import pomodoro from "../assets/logos/pomodoro.svg";
 import mastercraft from "../assets/logos/mastercraft.svg";
+import { Link } from "react-router-dom";
 
 const imageMap = {
   pod,
@@ -41,15 +42,11 @@ const Company = ({ data }) => {
 
   //   const image = require(logo);
   //   console.log(image);
-
+  const imgUrl = imageMap[company.replace(" ", "").toLowerCase()];
   return (
     <div className="job-wrapper">
       <div className="logo-wrapper" style={{ background: logoBackground }}>
-        <img
-          className="company-logo"
-          src={imageMap[company.replace(" ", "").toLowerCase()]}
-          width={80}
-        />
+        <img className="company-logo" src={imgUrl} width={80} />
       </div>
       <div className="details-wrapper">
         <h3 className="posted">
@@ -61,7 +58,12 @@ const Company = ({ data }) => {
 
       <div className="location-wrapper">
         <h3>
-          <a href="#">{location}</a>
+          <Link
+            to={`/details/${company}`}
+            state={{ data: { ...data, imgUrl } }}
+          >
+            {location}
+          </Link>
         </h3>
       </div>
     </div>
