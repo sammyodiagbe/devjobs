@@ -28,6 +28,15 @@ body .dark-app div.popover-wrapper div.filter-wrapper {
   color: #ffffff;
 }
 
+body .dark-app div.navigation-wrapper div.details-container {
+  background: #19212e;
+  color: #ffffff;
+}
+
+body .dark-app div.navigation-wrapper div.details-container div.company-details {
+  color: #ffffff;
+}
+
 body .dark-app div.search-container {
   background: #19212e;
 }
@@ -397,6 +406,33 @@ main.main.details-main div.description-wrapper {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   padding: 1.5em;
+}
+
+main.main.details-main div.description-wrapper div.description-top {
+  margin-bottom: 3em;
+}
+
+main.main.details-main div.description-wrapper div.description-top h1 {
+  margin: 10px 0;
+}
+
+main.main.details-main div.description-wrapper div.description-top p.location {
+  color: #5762e0;
+}
+
+main.main.details-main div.description-wrapper div.description-top div.d-container {
+  margin-bottom: 3em;
+}
+
+main.main.details-main div.description-wrapper div.description-top a.apply-now {
+  display: block;
+  padding: 1.5em;
+  text-align: center;
+  background: #5762e0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 main.main div.jobs-container {

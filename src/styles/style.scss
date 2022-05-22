@@ -44,7 +44,16 @@ body {
             color: $white;
             }
         }
+        div.navigation-wrapper {
+            div.details-container {
+                background: $very_dark_blue;
+                color: $white;
 
+                div.company-details {
+                    color: $white;
+                }
+            }
+        }
         div.search-container {
             background: $very_dark_blue;
             input[type=text] {
@@ -53,6 +62,7 @@ body {
                 //     // color: $white;
                 // }
             }
+
         }
 
         main.main {
@@ -357,6 +367,33 @@ div.navigation-wrapper {
             div.description-wrapper {
                 box-shadow: $box-shadow;
                 padding: $padding;
+
+                div.description-top {
+                    margin-bottom: 3em;
+                    h1 {
+                        margin: 10px 0;
+                    }
+
+                    p.location {
+                        color: $violet;
+                    }
+
+                    div.d-container {
+                        margin-bottom: 3em;
+                    }
+
+                    a.apply-now {
+                        display: block;
+                        padding: $padding;
+                        text-align: center;
+                        background: $violet;
+                        border-radius: $border-radius;
+                        color: $white;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        
+                    }
+                }
             }
         }
         div.jobs-container {

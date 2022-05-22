@@ -28,11 +28,16 @@ const Details = () => {
       <main className="main details-main">
         <div className="description-wrapper">
           <div className="description-top">
-            <p>
-              {postedAt}.{contract}
-            </p>
-            <h1>{position}</h1>
-            <p className="location">{location}</p>
+            <div className="d-container">
+              <p>
+                {postedAt}.{contract}
+              </p>
+              <h1>{position}</h1>
+              <p className="location">{location}</p>
+            </div>
+            <a href="#" className="apply-now">
+              Apply now
+            </a>
           </div>
           <div className="description-bottom">
             <p className="description">{description}</p>
