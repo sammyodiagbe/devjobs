@@ -66,6 +66,10 @@ body {
         }
 
         main.main {
+            div.fixed-bottom {
+                background: $very_dark_blue;
+                color: $white;
+            }
             &.details-main {
                 div.description-wrapper {
                     background: $very_dark_blue;
