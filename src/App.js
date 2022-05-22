@@ -15,7 +15,7 @@ function App() {
         <div className={theme === "light" ? "app light-app" : "app dark-app"}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/details" element={<Details />} />
+            <Route path="/details/:routename" element={<Details />} />
           </Routes>
         </div>
       </themeContext.Provider>
