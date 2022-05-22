@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import { themeContext } from "./context/themeContext";
 import { useState } from "react";
 import companyDatas from "./data/data.json";
+import Details from "./pages/details";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -14,6 +15,7 @@ function App() {
         <div className={theme === "light" ? "app light-app" : "app dark-app"}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/details" element={<Details />} />
           </Routes>
         </div>
       </themeContext.Provider>
