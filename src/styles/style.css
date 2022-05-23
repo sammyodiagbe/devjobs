@@ -99,6 +99,14 @@ h4 {
   line-height: 18px;
 }
 
+.hide-lg {
+  display: none !important;
+}
+
+.btn {
+  padding: 1.5em;
+}
+
 div.popover-wrapper {
   position: fixed;
   left: 0;

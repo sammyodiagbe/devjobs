@@ -1,9 +1,13 @@
 import LightModeIcon from "../assets/moon_light_icon.svg";
 import DarkModeIcon from "../assets/moon_icon.svg";
 import filterLightIcon from "../assets/filter_light.svg";
+import locationIcon from "../assets/location_icon.svg";
 import searchIcon from "../assets/search_icon.svg";
+import desktopIconSearch from "../assets/desktop/icon-search.svg";
 import { useContext } from "react";
 import { themeContext } from "../context/themeContext";
+import InputWithIcon from "./inputWithIcon";
+import CustomCheckbox from "./customCheckbox";
 
 const Navigation = ({ setOpenPopover, page, detailsData }) => {
   const { setTheme } = useContext(themeContext);
@@ -36,7 +40,7 @@ const Navigation = ({ setOpenPopover, page, detailsData }) => {
       </nav>
       {!page ? (
         <div className="search-container">
-          <div className="mobile-search">
+          <div className="mobile-search hide-lg">
             <input type="text" placeholder="Filter by title" />
             <button className="form-icon" onClick={() => setOpenPopover(true)}>
               <img src={filterLightIcon} alt="filter" />
@@ -44,6 +48,17 @@ const Navigation = ({ setOpenPopover, page, detailsData }) => {
             <button className="mobile-submit">
               <img src={searchIcon} alt="search icon" />
             </button>
+          </div>
+          <div className="desktop-ipad-search-container hide-sm">
+            <InputWithIcon icon={locationIcon} title="filter by title" />
+            <InputWithIcon
+              icon={desktopIconSearch}
+              title="filter by location"
+            />
+            <div className="filter-search-button">
+              <CustomCheckbox text={"Full time"} />
+              <button className="btn search-btn">Search</button>
+            </div>
           </div>
         </div>
       ) : (

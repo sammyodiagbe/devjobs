@@ -45,7 +45,7 @@ const Home = () => {
             </div>
             <div className="filter-body">
               <div className="filter-body-head">
-                <CustomCheckbox />
+                <CustomCheckbox text="Full time only" />
               </div>
               <button className="btn search-btn">Search</button>
             </div>

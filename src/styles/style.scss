@@ -125,6 +125,14 @@ h4 {
     line-height: 18px;
 }
 
+.hide-lg {
+    display: none !important;
+}
+
+.btn {
+    padding: $padding;
+}
+
 div.popover-wrapper {
     position: fixed;
     left: 0;
