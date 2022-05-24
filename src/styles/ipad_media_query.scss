@@ -1,0 +1,47 @@
+// primary colors
+$violet: hsl(235, 69%, 61%);
+$light_violet: hsl(235, 82, 77);
+$very_dark_blue: hsl(219, 29, 14);
+$midnight: hsl(220, 29, 10);
+
+// secondary colors
+$white : #ffffff;
+$light_grey: #f4f6f8;
+$grey: #9daec2;
+$dark_grey: #6e8098;
+
+$padding: 1.5em;
+$border-radius: 8px;
+$box-shadow: 0 0 3px rgba(0,0,0,.2);
+$logo-radius: 17px;
+@media screen and (min-width: 768px) {
+    div.navigation-wrapper {
+        nav.navigation {
+
+        }
+        div.search-container {
+            display: grid;
+            div.desktop-ipad-search-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 200px;
+                align-items: center;
+                justify-content: space-evenly;
+                div.filter-search-button {
+                    display: grid;
+                    grid-template-columns: max-content 1fr;
+                    align-items: center;
+                    color: $very_dark_blue;
+                    grid-gap: 5px;
+                    button.search-btn {
+                        background: $violet;
+                        color: $white;
+                        padding: .8em 1em;
+                        border-radius: $border-radius;
+                    }
+                }
+            }
+        }   
+        
+    }
+    
+}

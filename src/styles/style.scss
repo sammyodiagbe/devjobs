@@ -132,7 +132,11 @@ h4 {
 .btn {
     padding: $padding;
 }
-
+div.custom-input-wrapper {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+}
 div.popover-wrapper {
     position: fixed;
     left: 0;

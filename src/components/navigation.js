@@ -56,7 +56,7 @@ const Navigation = ({ setOpenPopover, page, detailsData }) => {
               title="filter by location"
             />
             <div className="filter-search-button">
-              <CustomCheckbox text={"Full time"} />
+              <CustomCheckbox text={"Full time Only"} />
               <button className="btn search-btn">Search</button>
             </div>
           </div>
