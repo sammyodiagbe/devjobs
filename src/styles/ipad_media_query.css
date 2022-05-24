@@ -33,5 +33,12 @@
     padding: .8em 1em;
     border-radius: 8px;
   }
+  main.main div.jobs-container {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    grid-gap: 2.5em !important;
+  }
 }
 /*# sourceMappingURL=ipad_media_query.css.map */

@@ -43,5 +43,13 @@ $logo-radius: 17px;
         }   
         
     }
+
+    main.main {
+        div.jobs-container {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            grid-gap: 2.5em !important;
+        }
+    }
     
 }
