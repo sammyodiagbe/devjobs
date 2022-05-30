@@ -14,30 +14,33 @@ const Navigation = ({ setOpenPopover, page, detailsData }) => {
   const { imgUrl, company, logoBackground, apply } = detailsData || {};
   return (
     <div className="navigation-wrapper">
-      <nav className="navigation">
-        <h1 className="brand">devJobs</h1>
-        <div className="toggle-wrapper">
-          <img src={LightModeIcon} alt="dark mode toggle icon" />
-          <div className="toggle-container">
-            <label htmlFor="toggle">
-              <input
-                type="checkbox"
-                id="toggle"
-                name="toggle"
-                onChange={(e) => {
-                  if (e.target.checked) {
-                    setTheme("dark");
-                  } else {
-                    setTheme("light");
-                  }
-                }}
-              />
-              <span className="toggle-container"></span>
-            </label>
+      <div className="container">
+        <nav className="navigation">
+          <h1 className="brand">devJobs</h1>
+          <div className="toggle-wrapper">
+            <img src={LightModeIcon} alt="dark mode toggle icon" />
+            <div className="toggle-container">
+              <label htmlFor="toggle">
+                <input
+                  type="checkbox"
+                  id="toggle"
+                  name="toggle"
+                  onChange={(e) => {
+                    if (e.target.checked) {
+                      setTheme("dark");
+                    } else {
+                      setTheme("light");
+                    }
+                  }}
+                />
+                <span className="toggle-container"></span>
+              </label>
+            </div>
+            <img src={DarkModeIcon} alt="dark mode toggle icon" />
           </div>
-          <img src={DarkModeIcon} alt="dark mode toggle icon" />
-        </div>
-      </nav>
+        </nav>
+      </div>
+
       {!page ? (
         <div className="search-container">
           <div className="mobile-search hide-lg">

@@ -28,7 +28,9 @@ const Home = () => {
       <Navigation setOpenPopover={setOpenPopover} />
 
       <main className="main">
-        <div className="jobs-container">{renderJobs}</div>
+        <div className="container">
+          <div className="jobs-container">{renderJobs}</div>
+        </div>
       </main>
 
       {popover && (
